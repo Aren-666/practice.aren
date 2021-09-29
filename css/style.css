@@ -165,7 +165,22 @@ ul.ddmenu ul li a:hover {
   margin: 0 auto;
   position: relative;
 }
-.footer-ul {
+.footer-ul1 {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 350px;
+  padding: 30px 30px 30px 0px;
+}
+.footer-ul1 li{
+  padding: 0 20px;
+  line-height: 1px;
+}
+.footer-ul2 {
   display: flex;
   display: -webkit-box;
   display: -webkit-flex;
@@ -176,7 +191,7 @@ ul.ddmenu ul li a:hover {
   right: 0;
   padding: 30px 30px 30px 0px;
 }
-.footer-ul li{
+.footer-ul2 li{
   padding: 0 20px;
   line-height: 1px;
 }
@@ -644,7 +659,7 @@ dt {
 .business-topvisual h2 {
   line-height: 200px;
   color: #fff;
-  font-size: clamp(30px,2.5vw,40px);
+  font-size: clamp(20px,2.5vw,40px);
   text-shadow: 2px 2px 10px black;
   letter-spacing: 10px;
 }
@@ -870,6 +885,7 @@ dt {
   position: relative;
 }
 #technology-main1 h2::after {
+  display: block;
   content: "";
   position: absolute;
   background: rgba(0, 89, 173, 0.699);
@@ -880,6 +896,7 @@ dt {
   z-index: -1;
 }
 #technology-main2 h2::after {
+  display: block;
   content: "";
   position: absolute;
   background: rgba(219, 235, 2, 0.747);
@@ -890,6 +907,7 @@ dt {
   z-index: -1;
 }
 #technology-main3 h2::after {
+  display: block;
   content: "";
   position: absolute;
   background: rgba(0, 138, 41, 0.411);
@@ -900,6 +918,7 @@ dt {
   z-index: -1;
 }
 #technology-main4 h2::after {
+  display: block;
   content: "";
   position: absolute;
   background: rgba(140, 0, 175, 0.534);;
@@ -1405,6 +1424,9 @@ dt {
   width: 100%;
   height: 100%;
 }
+.only-500 {
+  display: none;
+}
 
 /* レスポンシブ */
 @media screen and (max-width:1000px) {
@@ -1426,7 +1448,7 @@ dt {
     margin: 0px;
   }
   #top h2{
-    font-size: 4.5vw;
+    font-size: clamp(36px,4.5vw,48px);
   }
   #top p {
     color: #036eb8;
@@ -1436,18 +1458,25 @@ dt {
   #top a {
     font-size: 2vw;
   }
-  #top img {
-    position: absolute;
-    right: 0;
-    bottom: 30px;
-    z-index: -1;
-    height: 350px;
+  .top-img {
+    margin: 60px auto 0;
+    max-width: 600px;
   }
   /* FOOTER  */
-  .footer-ul {
+  #footer {
+    margin-top: 110px;
+  }
+  .footer-ul1 {
+    right: 280px;
     padding: 30px 5px 30px 0px;
   }
-  .footer-ul li{
+  .footer-ul1 li{
+    padding: 0 10px;
+  }
+  .footer-ul2 {
+    padding: 30px 5px 30px 0px;
+  }
+  .footer-ul2 li{
     padding: 0 10px;
   }
   #footer img{
@@ -1777,9 +1806,18 @@ dt {
   .left-article2 {
     min-height: 200px;
   }
-
   .value-content1 ,.value-content2{
     padding: 20px;
+  }
+
+  .left-article1 img{
+    width: 30%;
+    min-height: 80px;
+    margin-top: 25px;
+  }
+  .left-article2-text li{
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 
@@ -1792,36 +1830,39 @@ dt {
   }
   /* TOP  */
   #top {
-    padding-bottom: 300px;
+    padding-bottom: 600px;
   }
   #top h2{
-    font-size: 30px;
+    font-size: clamp(22px,6vw,36px);
   }
   #top p {
     color: #036eb8;
     margin-bottom: 80px;
-    font-size: 16px;
+    font-size: 12px;
+    max-width: 500px;
+    margin: 10px auto 30px;
+    padding: 0 8px;
   }
   #top a {
-    font-size: 20px;
-  }
-  #top img {
-    position: absolute;
-    right: 0;
-    bottom: 50px;
-    z-index: -1;
-    height: 300px;
-    width: 120%;
+    font-size: 16px;
+    padding: 15px 20px;
   }
   /* FOOTER */
   #footer img{
     height: 24px;
   }
-  .footer-ul {
+  .footer-ul1 {
+    right: 245px;
     padding: 30px 0px 30px 0px;
   }
-  .footer-ul li{
-    padding: 0 7px;
+  .footer-ul1 li{
+    padding: 0 5px;
+  }
+  .footer-ul2 {
+    padding: 30px 0px 30px 0px;
+  }
+  .footer-ul2 li{
+    padding: 0 5px;
   }
   .footer-img1 {
     width: 130px;
@@ -1847,11 +1888,11 @@ dt {
     max-width: 300px;
   }
   select {
-    width: 90%;
+    width: 85%;
     margin: 0 0 0 60px;
   }
   textarea {
-    width: 112%;
+    width: 105%;
   }
   dt {
     margin: 10px 0;
@@ -1957,6 +1998,10 @@ dt {
     max-width: none;
     width: 100%;
   }
+  .philosophy3-text table{
+    width: 90%;
+    margin: auto;
+  }
   .philosophy3-imgtop-sp {
     display: block;
     margin-bottom: 20px;
@@ -2012,8 +2057,9 @@ dt {
     margin: 30px 0;
   }
   /* BUSINESS  */
-  .structure {
-    margin: 30px 0;
+  .business-title {
+    font-size: clamp(20px,4vw,24px);
+    padding: 0 15px 25px 50px;
   }
   .structure {
     margin: 40px auto;
@@ -2036,9 +2082,9 @@ dt {
   }
 
   #business-top img {
-    margin: 40px 0;
-    width: 60%;
-    min-width: 450px;
+    margin: 40px 0 20px;
+    width: 80%;
+    min-width: 300px;
   }
   #business-top p {
     width: 80%;
@@ -2183,7 +2229,7 @@ dt {
   #technology22 .technology-text p{
     text-align: center;
     margin: 0 20px;
-    font-size: clamp(16px,1.8vw,20px);
+    font-size: clamp(14px,1.8vw,20px);
     width: 100%;
   }
 
@@ -2297,4 +2343,222 @@ dt {
     max-width: 80%;
     margin: 10px auto 60px;
   }
+}
+
+@media screen and (max-width:500px) {
+  .only-500 {
+    display: block;
+  }
+
+  #technology-main1,#technology-main2,#technology-main3,#technology-main4 {
+    padding: 50px 0;
+  }
+
+  #top {
+    padding-bottom: 550px;
+  }
+  #footer {
+    border-top: solid 1px black;
+    position: relative;
+  }
+  .footer-ul1 {
+    right: 0;
+    bottom: 100px;
+    padding: 30px 0px 30px 0px;
+  }
+  .footer-ul1 li{
+    padding: 0 5px;
+  }
+  .footer-ul2 {
+    padding: 60px 0px 30px 0px;
+  }
+  .structure img {
+    width: 30%;
+  }
+  .structure {
+    font-size: 12px;
+  }
+  .structure h4{
+    font-size: 16px;
+    color: #036eb8;
+  }
+  .structure1 {
+    top: -10px;
+    left: 9%;
+  }
+  .structure2 {
+    top: -10px;
+    left:  265px;
+  }
+  .structure3 {
+    top: 130px;
+    left: 150px;
+  }
+  .profile-topvisual h2 {
+    font-size: 16px;
+  }
+  .profile1 img {
+    width: 90%;
+  }
+  
+  .philosophy3-bottom img{
+    width: 60%;
+    height: 50%;
+  }
+  .philosophy3-bottom-img1 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    color: #fff;
+  }
+  .philosophy3-bottom::after{
+    width: 270px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .philosophy3-bottom-img2 {
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .philosophy3-bottom-img3 {
+    top: 105%;
+    left: 10%;
+  }
+  .philosophy3-bottom-img4 {
+    top: 105%;
+    left: 65%;
+  }
+
+  #philosophy4 img{
+    margin: 30px auto 20px;
+  }
+
+  #philosophy5 img{
+    margin: 60px auto 20px;
+  }
+
+  .hexagon {
+    font-size: 20px;
+  }
+  .hexagon5 {
+    top: 72%;
+    left: 60%;
+  }
+
+  #technology22 .technology-text p{
+    margin: 0 3px;
+    font-size: 14px;
+  }
+  .left-article2-text li{
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .structure img {
+    width: 25%;
+  }
+  .structure1 {
+    top: -20px;
+    left: 10%;
+  }
+  .structure2 {
+    top: -20px;
+    left:  230px;
+  }
+  .structure3 {
+    top: 120px;
+    left: 140px;
+  }
+  .profile-topvisual h2 {
+    font-size: 12px;
+  }
+  .philosophy2-text p {
+    font-size: 10px;
+  }
+
+  .hexagon-center {
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:360px) {
+    .structure {
+    margin: 40px auto;
+    max-width: 400px;
+  }
+  .structure img {
+    width: 30%;
+  }
+  .structure1 {
+    top: -45px;
+    left: 2%;
+  }
+  .structure2 {
+    top: -45px;
+    left:  220px;
+  }
+  .structure3 {
+    top: 115px;
+    left: 115px;
+  }
+  .profile-topvisual h2 {
+    font-size: 10px;
+  }
+  .profile1 img {
+    width: 100%;
+  }
+  #technology22 .technology-text p{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:320px) {
+    /* TOP  */
+    #top {
+      padding-bottom: 500px;
+    }
+    #top h2{
+      font-size: clamp(12px,6vw,18px);
+    }
+    #top p {
+      font-size: 12px;
+      max-width: 300px;
+      margin: 10px auto 30px;
+    }
+    #top a {
+      font-size: clamp(12px,5vw,16px);
+      padding: 15px 20px;
+    }
+
+    .structure {
+      margin: 40px auto;
+      max-width: 400px;
+    }
+    .structure img {
+      width: 25%;
+    }
+    .structure1 {
+      top: -45px;
+      left: 2%;
+    }
+    .structure2 {
+      top: -45px;
+      left:  190px;
+    }
+    .structure3 {
+      top: 120px;
+      left: 100px;
+    }
 }
