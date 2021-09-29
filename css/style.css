@@ -2498,10 +2498,14 @@ dt {
     text-align: center;
     font-size: 30px;
   }
+  .business-title {
+    font-size: clamp(20px,4vw,24px);
+    padding: 0 15px 25px 20px;
+  }
 }
 
 @media screen and (max-width:360px) {
-    .structure {
+  .structure {
     margin: 40px auto;
     max-width: 400px;
   }
