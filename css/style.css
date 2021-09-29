@@ -1888,7 +1888,7 @@ dt {
     max-width: 300px;
   }
   select {
-    width: 84%;
+    width: 85%;
     margin: 0 0 0 65px;
   }
   textarea {
@@ -1901,6 +1901,9 @@ dt {
   }
   dd {
     margin: 10px 0;
+  }
+  dl {
+    position: relative;
   }
   .first-line,.second-line{
     flex-direction: column;
@@ -1933,6 +1936,11 @@ dt {
   }
   .last-content dd {
     width: 100%;
+  }
+  .button {
+    position: absolute;
+    right: -20px;
+    bottom: -25px;
   }
   .select-back::after {
     content: "▼";
