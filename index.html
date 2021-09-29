@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAIHO CO.,Ltd.</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modaal.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-wrapper">
+      <h2><a href="index.html"><img src="img/logo.TAIHO.png" alt="TAIHO CO.,Ltd."></a></h2>
+      <div class="header-right">
+        <ul class="ddmenu">
+          <li><a href="profile.html">Company Information ›</a></li>
+          <li><a href="value.html">Our value ›</a></li>
+          <li><a href="businesstop.html">Business case ›</a>
+              <ul>
+                <li><a href="engineering.html">Engineering</a></li>
+                <li><a href="construction.html">Construction</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="technology-keeps-going.html">Technology-keeps going</a></li>
+              </ul>
+          </li>
+          <li><a href="technology-keeps-going.html">Challenge to new field ›</a>
+          </li>
+        </ul>
+        <p><a href="contact.html">contact us</a></p>
+      </div>
+      
+      <div class="hamburger-menu">
+        <button class="menu-btn">
+          <span></span>
+        </button>
+        <!--ここからメニュー-->
+        <div class="menu-content">
+          <ul class="ddmenu-sp">
+            <li><a href="profile.html">Company Information</a></li>
+            <li><a href="value.html">Our value</a></li>
+            <li><a href="businesstop.html">Business case</a>
+                <ul>
+                  <li><a href="engineering.html">Engineering</a></li>
+                  <li><a href="construction.html">Construction</a></li>
+                  <li><a href="technology.html">Technology</a></li>
+                  <li><a href="technology-keeps-going.html">TECHNOLOGY-KEEPS GOING</a></li>
+                </ul>
+            </li>
+            <li><a href="technology-keeps-going.html">Challenge to new field</a>
+            </li>
+            <li><p><a href="">contact us</a></p></li>
+          </ul>
+        </div>
+        <!--ここまでメニュー-->
+      </div>
+    </div>
+  </header>
+
+<main id="top">
+  <article>
+    <h2>人がいる限り、街がある限り。</h2>
+    <p>環境の世紀ともいわれる21世紀。「次世代の付加価値とは何か」を<br class="only-pc-tb">お客様の視点から問い続け、常に新しい価値の創造を追求し、<br class="only-pc-tb">幅広い分野での総合的な提案を行っています。</p>
+    <a href="video.html" class="inline">私たちの事業案内を閲覧する</a>
+  </div>
+</article>
+<div class="top-img-wrapper">
+  <img class="only-sp top-img" src="img/image1.jpg" alt="">
+  </div>
+</main>
+
+  <footer id="footer">
+    <div class="footer-wrapper">
+      <ul class="footer-ul1">
+        <li class="footer-firstchild">関連企業</li>
+        <li class="footer-img1"><img src="img/icon.SHINRITSU.png" alt="SHINRITSU"></li>
+      </ul>
+      <ul class="footer-ul2">
+        <li class="footer-img2"><img src="img/image2.png" alt="TAIHO CO.,Ltd."></li>
+        <li class="footer-img3"><img src="img/brand_logo09315.gif" alt="DOI"></li>
+        <li class="footer-lastchild">日本治具株式会社</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/modaal.js"></script>
+  <script>
+    $(function(){
+      $(".inline").modaal({type:'video'});
+    });
+  </script>
+</body>
+</html>
