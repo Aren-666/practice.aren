@@ -1889,10 +1889,11 @@ dt {
   }
   select {
     width: 85%;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 65px;
   }
   textarea {
     width: 105%;
+    margin-left: 2px;
   }
   dt {
     margin: 10px 0;
@@ -1935,7 +1936,7 @@ dt {
   }
   .select-back::after {
     content: "▼";
-    margin: -30px 0 0 310px;
+    margin: -30px 0 0 290px;
     position: absolute;
     pointer-events: none;
   }
