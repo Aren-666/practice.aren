@@ -860,7 +860,7 @@ dt {
 }
 
 #technology-main1,#technology-main2,#technology-main3,#technology-main4 {
-  padding: 50px 6%;
+  padding: 50px 6% 0;
   max-width: 1300px;
   margin: 70px auto 0;
 }
@@ -1892,7 +1892,7 @@ dt {
     margin: 0 0 0 65px;
   }
   textarea {
-    width: 105%;
+    width: 107%;
     margin-left: 2px;
   }
   dt {
