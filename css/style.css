@@ -1441,6 +1441,7 @@ dt {
   }
   #top {
     background: none;
+    margin-bottom: 110px;
   }
   #top article {
     width: 100%;
@@ -1463,9 +1464,6 @@ dt {
     max-width: 600px;
   }
   /* FOOTER  */
-  #footer {
-    margin-top: 110px;
-  }
   .footer-ul1 {
     right: 280px;
     padding: 30px 5px 30px 0px;
