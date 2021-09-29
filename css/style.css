@@ -1732,6 +1732,9 @@ dt {
     padding-left: 0;
   }
   
+  #technology-main4 h2::after {
+    top: 34px;
+  }
   .section-title{
     font-size: 20px;
     padding-left: 40px;
@@ -2104,6 +2107,9 @@ dt {
   /* TECHONLOGY  */
   #technology-main1,#technology-main2,#technology-main3,#technology-main4 {
     padding: 50px 2%;
+  }
+  #technology-main4 h2::after {
+    top: 22px;
   }
   .section-title{
     font-size: clamp(16px,3vw,30px);
@@ -2505,6 +2511,9 @@ dt {
   .business-title {
     font-size: clamp(20px,4vw,24px);
     padding: 0 15px 25px 20px;
+  }
+  #technology-main4 h2::after {
+    top: 18px;
   }
 }
 
