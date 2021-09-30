@@ -2012,6 +2012,9 @@ dt {
     width: 90%;
     margin: auto;
   }
+  .philosophy3-text table td{
+    font-size: 14px;
+  }
   .philosophy3-imgtop-sp {
     display: block;
     margin-bottom: 20px;
@@ -2420,6 +2423,12 @@ dt {
     width: 90%;
   }
   
+  .philosophy3-text table th{
+    font-size: 14px;
+  }
+  .philosophy3-text table td{
+    font-size: 12px;
+  }
   .philosophy3-bottom img{
     width: 60%;
     height: 50%;
@@ -2504,6 +2513,12 @@ dt {
     font-size: 12px;
   }
   .philosophy2-text p {
+    font-size: 10px;
+  }
+  .philosophy3-text table td{
+    font-size: 12px;
+  }
+  .philosophy3-text table td{
     font-size: 10px;
   }
 
